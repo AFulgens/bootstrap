@@ -48,7 +48,9 @@ sudo pip install mysql prettytable numpy > /dev/null
 # dotfiles install through rcm missing yet
 
 echo "if we are running in virtualbox, this doesn't hurt for resolution"
+sudo apt-get install -y xserver-xorg-core > /dev/null
 sudo apt-get install -y virtualbox-guest-dkms > /dev/null
+sudo apt-get install -y virtualbox-guest-x11 > /dev/null
 
 echo "see you soon"
 sudo reboot
