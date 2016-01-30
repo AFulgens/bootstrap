@@ -33,9 +33,9 @@ cd ..
 
 echo "build python pusher client 1.2.3 from github release"
 sudo pip install pusher websocket-client
-https://github.com/pusher/pusher-http-python/archive/v1.2.3.tar.gz
-tar xzf v1.2.3.tar.gz -C pusherClient
-cd pusherClient
+wget https://github.com/pusher/pusher-http-python/archive/v1.2.3.tar.gz
+tar xzf v1.2.3.tar.gz > /dev/null
+cd pusher-http-python-1.2.3
 sudo python setup.py install > /dev/null
 
 cd
